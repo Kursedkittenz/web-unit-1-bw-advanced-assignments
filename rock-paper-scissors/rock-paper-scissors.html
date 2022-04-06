@@ -7,21 +7,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="rock-paper-scissors.css" />
     <script type="text/javascript" src="rock-paper-scissors.js" defer></script>
-    <script
-      src="https://kit.fontawesome.com/e391ce7786.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/1d436cc891.js" crossorigin="anonymous"></script>
+
   </head>
 
   <body>
     <!-- make an area to display some text about the game and to display who won the round -->
+    <header>
+      <div>
+        <title>Rock, Paper, Scissors</title>
+        <h1>Rock, Paper, Scissors</h1>
+        <p id = 'message'>Play now!</p>
+      </div>
+      
+    </header>
     <!-- make an area to display the human score and computer score -->
-    <!-- make an area to display your move and the computer's move -->
-    <div>
+    <div class = 'container'>
+      <div class = 'score'>
+        <p id = 'humanScore'>Human: 0</p>
+      </div>
+      <div class = 'score'>
+        <p id = 'compScore'>Computer: 0</p>
+      </div>
+    </div>
+     <!-- make an area to display your move and the computer's move -->
+    <div class = 'container' style="border: 1px solid black;">
+      <div>
+        <i class = 'icons' id = 'humanChoice'></i>
+      </div>
+      <div>
+        <i class = 'icons' id = 'compChoice'></i>
+      </div>
+    </div>
+
+    <div class = 'container choice'>
       <!-- this area will be where you pick your move -->
-      <button class="fas fa-hand-rock" id="rock"></button>
-      <button class="fas fa-hand-paper" id="paper"></button>
-      <button class="fas fa-hand-scissors" id="scissors"></button>
+      <button class="fas fa-hand-rock" id="rock" onclick="playGame('rock')"></button>
+      <button class="fas fa-hand-paper" id="paper" onclick="playGame('paper')"></button>
+      <button class="fa-solid fa-hand-scissors" id="scissors" onclick="playGame('scissors')"></button>
     </div>
   </body>
 </html>
