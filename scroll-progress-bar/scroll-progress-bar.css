@@ -1,2 +1,34 @@
 /* you may need to experiment with the "position" property for your scroll bar */
 /* your scroll bar and the fill inside will be styled separately */
+body{
+    margin:0;
+}
+
+.progressbar{
+    position: fixed;
+    background-color: black;
+    width: 80%;
+    top:130px;
+    left:10%;
+    border-radius: 15px;
+}
+
+.progressbarinner{
+    position:relative;
+    width: 0%;
+    color: aliceblue;
+    background-image: linear-gradient(to right, red,green);
+}
+
+header{
+    position: sticky;
+    top:0;
+    text-align: center;
+    padding: 25px;
+    height: auto;
+    background-color: aliceblue;
+}
+
+p{
+    padding: 15px;
+}
